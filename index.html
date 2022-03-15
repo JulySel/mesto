@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="pages/index.css" />
+    <title>Место</title>
+  </head>
+  <body class="body">
+    <div class="page">
+      <header class="header">
+        <img class="header__logo" src="./images/logo.png" alt="логотип" />
+      </header>
+      <main>
+        <section class="profile">
+          <img
+            class="profile__avatar"
+            src="./images/Avatar.png"
+            alt="Жак-Ив Кусто"
+          />
+          <div class="profile-info">
+            <div class="profile_info__title-and-btn">
+              <h1 class="profile-info__title">Жак-Ив Кусто</h1>
+              <button class="profile-info__edit-button">
+                <img
+                  src="./images/edit-button.svg"
+                  alt="кнопка редактировать"
+                />
+              </button>
+            </div>
+            <p class="profile-info__subtitle">Исследователь океана</p>
+          </div>
+          <div class="profile__actions">
+            <button class="profile__add-button">
+              <img src="./images/add-button.svg" alt="кнопка добавить" />
+            </button>
+          </div>
+        </section>
+        <section class="elements">
+          <div class="element">
+            <img
+              class="element__photo"
+              src="./images/pyatigorsk.jpg"
+              alt="пятигорск"
+            />
+            <div class="element__info">
+              <span class="element__title">Пятигорск</span>
+              <button class="element__like element__like_active"></button>
+            </div>
+          </div>
+          <div class="element">
+            <img
+              class="element__photo"
+              src="./images/murmansk.jpg"
+              alt="мурманск"
+            />
+            <div class="element__info">
+              <span class="element__title">Мурманск</span>
+              <button class="element__like"></button>
+            </div>
+          </div>
+          <div class="element">
+            <img
+              class="element__photo"
+              src="./images/pushkin.jpg"
+              alt="пушкин"
+            />
+            <div class="element__info">
+              <span class="element__title">Пушкин</span>
+              <button class="element__like"></button>
+            </div>
+          </div>
+          <div class="element">
+            <img
+              class="element__photo"
+              src="./images/karachaevsk.jpg"
+              alt="карачаевск"
+            />
+            <div class="element__info">
+              <span class="element__title">Карачаевск</span>
+              <button class="element__like"></button>
+            </div>
+          </div>
+          <div class="element">
+            <img
+              class="element__photo"
+              src="./images/el'brus.jpg"
+              alt="гора эльбрус"
+            />
+            <div class="element__info">
+              <span class="element__title">Гора Эльбрус</span>
+              <button class="element__like"></button>
+            </div>
+          </div>
+          <div class="element">
+            <img
+              class="element__photo"
+              src="./images/dombai.jpg"
+              alt="домбай"
+            />
+            <div class="element__info">
+              <span class="element__title">Домбай</span>
+              <button class="element__like"></button>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">&copy; 2022 Mesto Russia</p>
+      </footer>
+    </div>
+    <div class="popup">
+      <div class="popup__overflow"></div>
+      <div class="popup__container">
+        <button class="popup__button-close">
+          <img src="./images/Close-Icon.svg" alt="кнопка закрыть" />
+        </button>
+        <h2 class="popup__title">Редактировать профиль</h2>
+        <form class="popup__form">
+          <div class="popup__inputs">
+            <input class="popup__input" name="name" />
+            <input class="popup__input" name="job" />
+          </div>
+          <button class="popup__button" type="submit">Сохранить</button>
+        </form>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
