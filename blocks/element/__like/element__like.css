@@ -4,9 +4,10 @@
   border: none;
   background-repeat: no-repeat;
   background-position: center;
+  align-self: flex-end;
   cursor: pointer;
-  width: 22px;
-  height: 19px;
+  min-width: 22px;
+  min-height: 19px;
 }
 
 .element__like:hover {

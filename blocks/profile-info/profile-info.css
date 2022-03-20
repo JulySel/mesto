@@ -2,10 +2,12 @@
   display: flex;
   flex-direction: column;
   gap: 16px;
+  flex: auto;
 }
 
 @media screen and (max-width: 320px) {
   .profile-info {
     gap: 14px;
+    align-items: center;
   }
 }

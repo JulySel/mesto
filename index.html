@@ -10,9 +10,9 @@
   <body class="body">
     <div class="page">
       <header class="header">
-        <img class="header__logo" src="./images/logo.png" alt="логотип" />
+        <img class="header__logo" src="./images/logo.png" alt="лого" />
       </header>
-      <main>
+      <main class="main">
         <section class="profile">
           <img
             class="profile__avatar"
@@ -20,9 +20,9 @@
             alt="Жак-Ив Кусто"
           />
           <div class="profile-info">
-            <div class="profile-info__title-and-btn">
+            <div class="profile-info__container">
               <h1 class="profile-info__title">Жак-Ив Кусто</h1>
-              <button class="profile-info__edit-button">
+              <button class="profile-info__edit-button" type="button">
                 <img
                   src="./images/edit-button.svg"
                   alt="кнопка редактировать"
@@ -31,11 +31,9 @@
             </div>
             <p class="profile-info__subtitle">Исследователь океана</p>
           </div>
-          <div class="profile__actions">
-            <button class="profile__add-button">
-              <img src="./images/add-button.svg" alt="кнопка добавить" />
-            </button>
-          </div>
+          <button class="profile__add-button" type="button">
+            <img src="./images/add-button.svg" alt="кнопка добавить" />
+          </button>
         </section>
         <section class="elements">
           <div class="element">
@@ -45,8 +43,11 @@
               alt="пятигорск"
             />
             <div class="element__info">
-              <span class="element__title">Пятигорск</span>
-              <button class="element__like element__like_active"></button>
+              <h3 class="element__title">Пятигорск</h3>
+              <button
+                class="element__like element__like_active"
+                type="button"
+              ></button>
             </div>
           </div>
           <div class="element">
@@ -56,8 +57,8 @@
               alt="мурманск"
             />
             <div class="element__info">
-              <span class="element__title">Мурманск</span>
-              <button class="element__like"></button>
+              <h3 class="element__title">Мурманск</h3>
+              <button class="element__like" type="button"></button>
             </div>
           </div>
           <div class="element">
@@ -67,8 +68,8 @@
               alt="пушкин"
             />
             <div class="element__info">
-              <span class="element__title">Пушкин</span>
-              <button class="element__like"></button>
+              <h3 class="element__title">Пушкин</h3>
+              <button class="element__like" type="button"></button>
             </div>
           </div>
           <div class="element">
@@ -78,8 +79,8 @@
               alt="карачаевск"
             />
             <div class="element__info">
-              <span class="element__title">Карачаевск</span>
-              <button class="element__like"></button>
+              <h3 class="element__title">Карачаевск</h3>
+              <button class="element__like" type="button"></button>
             </div>
           </div>
           <div class="element">
@@ -89,8 +90,8 @@
               alt="гора эльбрус"
             />
             <div class="element__info">
-              <span class="element__title">Гора Эльбрус</span>
-              <button class="element__like"></button>
+              <h3 class="element__title">Гора Эльбрус</h3>
+              <button class="element__like" type="button"></button>
             </div>
           </div>
           <div class="element">
@@ -100,8 +101,8 @@
               alt="домбай"
             />
             <div class="element__info">
-              <span class="element__title">Домбай</span>
-              <button class="element__like"></button>
+              <h3 class="element__title">Домбай</h3>
+              <button class="element__like" type="button"></button>
             </div>
           </div>
         </section>
@@ -113,11 +114,15 @@
     <div class="popup">
       <div class="popup__overflow"></div>
       <div class="popup__container">
-        <button class="popup__button-close">
-          <img src="./images/Close-Icon.svg" alt="кнопка закрыть" />
+        <button class="popup__button-close" type="button">
+          <img
+            class="popup__button-close-img"
+            src="./images/Close-Icon.svg"
+            alt="кнопка закрыть"
+          />
         </button>
         <h2 class="popup__title">Редактировать профиль</h2>
-        <form class="popup__form">
+        <form class="popup__form" name="popup__form">
           <div class="popup__inputs">
             <input class="popup__input" name="name" />
             <input class="popup__input" name="job" />
