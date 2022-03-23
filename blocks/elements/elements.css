@@ -9,5 +9,6 @@
   .elements {
     grid-template-columns: 1fr;
     gap: 19px 20px;
+    margin-bottom: 48px;
   }
 }

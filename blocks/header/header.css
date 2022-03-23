@@ -3,6 +3,13 @@
   border-bottom: 1px solid #545454;
 }
 
+@media screen and (min-width: 1280px) {
+  .header {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
 @media screen and (max-width: 320px) {
   .header {
     margin: 0;
